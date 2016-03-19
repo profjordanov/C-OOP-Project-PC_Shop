@@ -1,0 +1,52 @@
+// ConsoleApplication10.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <vector>
+#include <string>
+#include <iomanip>
+#include <fstream>
+#include <utility>
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	fstream file;
+	file.open("C:\\Test\\Pair.txt", ios::in);
+	if(!file.is_open()){
+		cerr<<"Cant Open!";
+			return -1;
+	}
+
+	string duma;
+	vector<string>masiv;
+	bool flag;
+
+	while(!file.eof()){
+		file >> duma;
+		if(duma.length() < 1) continue;
+		flag = false ;
+
+		for (int i = 0; i < masiv.size(); i++)
+		{
+			if(duma == masiv[i])
+			{
+				flag = true;
+				break;
+			}
+		}
+		
+		if(flag == false)
+		{
+			masiv.push_back(duma);
+		}
+	}
+	for (int i = 0; i < masiv.size(); i++)
+	{
+		cout<<masiv[i]<<endl;
+	}
+	return 0;
+}
+
