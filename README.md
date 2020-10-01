@@ -1,9 +1,10 @@
-**Computer Shop - Console Based App
+# Computer Shop - Really, really simple console based application
 
-My first C++ project for object oriented programming course.
+> ### My first C++ project.
 
-Functionality:
-1. New Order
-2. Add PC item
-3. Modify order
-4. List orders
+## Functionalities:
+
+- [x] New Order
+- [x] Add PC item
+- [x] Modify order
+- [x] List orders
