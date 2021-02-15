@@ -1,6 +1,6 @@
-# Computer Shop - Really, really simple console based application
+# Computer Shop
 
-> ### My first C++ project.
+Really, really simple console based application
 
 ## Functionalities:
 
